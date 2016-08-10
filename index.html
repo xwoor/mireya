@@ -1,0 +1,222 @@
+<!--
+Autor: Mario Osorio Torres
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Inicio</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script type="text/javascript" src="js/jquery.corner.js"></script> 
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	</head>
+	<body>
+
+		<div class="bg">
+		<div class="container">
+			<div id="home" class="header wow bounceInDown " data-wow-delay="0.4s">
+					<div class="top-header">
+						<div class="logo">
+							<a href="#">Scania</a>
+						</div>
+						 <nav class="top-nav ">
+							<ul class="top-nav">
+								<li><a href="#about" class="scroll">Nosotros</a></li>
+								<li><a href="#process" class="scroll">Servicios</a></li>
+								<li><a href="dos/slider.html">Catálogo</a></li>
+								<li class="page-scroll"><a href="#contact" class="scroll">Contacte nos</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="banner-info">
+				<div class="container">
+					<h1 class="wow fadeIn" data-wow-delay="0.5s"><span>Scania</span><br /><label>del Sur</label></h1>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+			<div id="about" class="about">
+				<div class="head-section">
+					<div class="container">
+						<h3><span>Acerca </span><label>de Nosotros</label></h3>
+					</div>
+				</div>	
+					<div class="about-grids">
+						<div class="col-md-4 about-grid about-grid1 wow fadeInLeft" data-wow-delay="0.4s">
+							<div class="about-grid-info">
+								<h4>Misión</h4>
+								<p>Llegar a los clientes que necesiten acabados en construcción, permitirles innovar con nuestros productos y dando un estilo diferente y profesional  a cada uno de sus proyectos.Llegar a los clientes que necesiten acabados en construcción, permitirles innovar con nuestros productos y dando un estilo diferente y profesional  a cada uno de sus proyectos.</p>
+							</div>
+							<div class="about-grid-pic">
+							<img src="images/about-pic1.jpg" title="name" />
+							</div>
+						</div>
+						<div class="col-md-4 about-grid about-grid2 wow fadeInUp" data-wow-delay="0.4s">
+							<div class="about-grid-pic">
+							<img src="images/about-pic2.jpg" title="name" />
+							</div>
+							<div class="about-grid-info">
+								<h4>Visión</h4>
+								<p>Llevar nuestro producto a varios puntos a nivel local y poder prestar servicio de instalación en cada proyecto de construcción.	</p><br><br><br><br>
+							</div>
+						</div>
+						<div class="col-md-4 about-grid about-grid1 wow fadeInRight" data-wow-delay="0.4s">
+							<div class="about-grid-info">
+								<h4>Descripción de nosotros</h4>
+								<p>Somos una empresa dedicada a la venta y distribución de materiales para acabados de construcción con  experiencia de más de 22 años, también prestamos el servicio de instalación con un personal altamente calificado dispuesto a dar lo mejor para satisfacer su necesidad.</p><br><br>
+							</div>
+							<div class="about-grid-pic">
+							<img src="images/about-pic3.jpg" title="name" />
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- /about-grids -->
+				</div>
+			</div>
+			
+			<div id="process" class="process">
+				<div class="head-section">
+					<div class="container">
+						<h3><span>Nuestros</span><label>Servicios</label></h3>
+					</div>
+				</div>
+				<div class="container">
+					<div class="process-grids text-center wow bounce" data-wow-delay="0.4s">
+						<div class="col-md-3 process-grid process-grid1 wow bounceInUp" data-wow-delay="0.4s">
+							
+							<h4><a>Instalación</a></h4>
+							<p>Instalación de drywall, super board, veneciano, graniplass, cornisas y pinturas en general</p>
+						</div>
+						<div class="col-md-3 process-grid process-grid2 wow bounceInDown" data-wow-delay="0.4s">
+							
+							<h4><a href="#">Moldes</a></h4>
+							<p>Fabricación de molduras en yeso, plástico y/o  moldes en fibra de vidrio.</p><br>
+						</div>
+						<div class="col-md-3 process-grid process-grid3 wow bounceInUp" data-wow-delay="0.4s">
+							
+							<h4><a href="#">Servicio electrico</a></h4>
+							<p>Prestamos servicio de instalación electrica</p><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			
+
+					<div class="clearfix"> </div>	
+				</div>
+			</div>
+				</div>
+			</div>
+			<!-- work-with-us-->
+			<div class="work-with-us text-center">
+				<div class="container">
+					<h4>Ven y visita nos en nuesto almacén</h4>
+					<p>encontrarás productos de la mas alta calidad, claro a los mejores precios </p>
+					<a class="catch-me wow shake" data-wow-delay="0.3s" href="#">contacte
+					nos</a>
+				</div>
+			</div>
+			<div id="team" class="team">
+				<div class="head-section">
+					<div class="container">
+						<h3><label>Contacte nos</label></h3>
+					</div>
+				</div>
+			
+			<div id="contact" class="map">
+				<div class="map-location">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d497.1406539106575!2d-74.12402553267204!3d4.57151278392394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1468038893428" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="contact-info text-center wow fadeInLeft" data-wow-delay="0.3s">
+		 			<h4><span>Scania</span>del Sur</h4>
+					<form class="form-horizontal" method="POST" name="formulario" action="enviar.php">
+  <div class="form-group">
+    <label for="nombre" class="col-sm-3 control-label">Nombre</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="telefono" class="col-sm-3 control-label">Teléfono</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control"  id="telefono" placeholder="telefono" name="telefono" required>
+    </div>
+  </div>
+   <div class="form-group">
+    <label for="email" class="col-sm-3 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" id="email" placeholder="email" required>
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label for="mensaje" class="col-sm-3 control-label">Mensaje</label>
+    <div class="col-sm-10">
+      <textarea type="text" class="form-control" name="mensaje" id="mensaje" placeholder="mensaje" required></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default" name="enviar">Enviar</button>
+    </div>
+  </div>
+</form>
+</div>	
+</div>
+</div>	
+</div>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+
+	</body>
+</html>
+
+
